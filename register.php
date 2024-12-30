@@ -15,67 +15,68 @@
   <div class="register py-5">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="text-center mb-4">Register</h3>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+          <div class="col-6">
+            <div class="card border-0">
+              <div class="card-header bg-secondary">
+                <h3 class="text-center mb-4">Register</h3>
+              </div>
+              <div class="card-body">
+                <form action="register" method="post" enctype="multipart/form-data">
+                  <!-- First Name and Last Name -->
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="first_name" class="form-label text-dark">First Name</label>
+                      <input type="text" id="first_name" name="first_name" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="last_name" class="form-label text-dark">Last Name</label>
+                      <input type="text" id="last_name" name="last_name" class="form-control" required>
+                    </div>
+                  </div>
+                  <!-- Email and Phone -->
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="email" class="form-label text-dark">Email</label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="phone" class="form-label text-dark">Phone</label>
+                      <input type="text" id="phone" name="phone" class="form-control" required>
+                    </div>
+                  </div>
+                  <!-- Password and Confirm Password -->
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="password" class="form-label text-dark">Password</label>
+                      <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="confirm_password" class="form-label text-dark">Confirm Password</label>
+                      <input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
+                    </div>
+                  </div>
+                  <!-- checkbox -->
+                  <div class="form-check form-check-inline mb-3">
+                    <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
+                    <label for="terms" class="form-check-label">
+                      <span class=" text-dark">I agree to the</span>
+                      <a href="terms.php" class="text-decoration-none "> terms and conditions</a>
+                    </label>
+                  </div>
+                </form>
+                <button type="submit" class="btn btn-dark px-4">Register</button>
+              </div>
+              <div class="card-footer bg-secondary">
+                <span>Already have an account?</span>
+                <a href="/login.php" class="text-white">Login</a>
+              </div>
             </div>
-            <div class="card-body">
-              <form action="register" method="post" enctype="multipart/form-data">
-                <!-- First Name and Last Name -->
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="first_name" class="form-label">First Name</label>
-                    <input type="text" id="first_name" name="first_name" class="form-control" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="last_name" class="form-label">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" class="form-control" required>
-                  </div>
-                </div>
-                <!-- Email and Phone -->
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="phone" class="form-label">Phone</label>
-                    <input type="text" id="phone" name="phone" class="form-control" required>
-                  </div>
-                </div>
-
-                <!-- Password and Confirm Password -->
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" id="password" name="password" class="form-control" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="confirm_password" class="form-label">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
-                  </div>
-                </div>
-                <!-- checkbox -->
-                <div class="form-check form-check-inline mb-3">
-                  <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
-                  <label for="terms" class="form-check-label">
-                    <span>I agree to the</span>
-                    <a href="terms.php" class="text-decoration-none "> terms and conditions</a>
-                  </label>
-                </div>
-              </form>
-              <button type="submit" class="btn btn-dark px-4">Register</button>
+            <div class="home-page text-center mt-3">
+              <a class="text-decoration-none" href="/index.php">
+                <i class="bi bi-arrow-left"></i> Back to Home
+              </a>
             </div>
-            <div class="card-footer">
-              <span>Already have an account?</span>
-              <a href="/login.php">Login</a>
-            </div>
-          </div>
-          <div class="home-page text-center mt-3">
-            <a class="text-decoration-none" href="/index.php">
-              <i class="bi bi-arrow-left"></i> Back to Home
-            </a>
           </div>
         </div>
       </div>

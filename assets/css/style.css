@@ -70,3 +70,95 @@
 .footer {
   background-color: #f4f4f9;
 }
+
+/* Register */
+
+.register {
+  position: relative; /* Ensures the overlay and content are positioned correctly */
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Make text visible over the dark overlay */
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.register::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
+  z-index: 1; /* Place overlay behind the text */
+}
+
+.register .container {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2;
+}
+
+/* Login */
+
+.login {
+  position: relative; /* Ensures the overlay and content are positioned correctly */
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Make text visible over the dark overlay */
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.login::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
+  z-index: 1; /* Place overlay behind the text */
+}
+
+.login .container {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2;
+}
+
+/* Hotel */
+.hotel-banner {
+  position: relative; /* Ensures the overlay and content are positioned correctly */
+  background-image: url('/assets/images/hotel-background.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Make text visible over the dark overlay */
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.hotel-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
+  z-index: 1; /* Place overlay behind the text */
+}
+
+.hotel-banner .container {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2;
+}
